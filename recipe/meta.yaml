@@ -1,5 +1,5 @@
 {% set name = "qiskit-finance" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/qiskit-finance-{{ version }}.tar.gz
-  sha256: aa8355ba87fbc8e8115be2f08396f9701bffbebeeb32c1decca67b5aaec6729e
+  sha256: 3babad4c424b5871a2c65ac617d8cd4f8a672d1118adb1940a13898a340702b8
 
 build:
   noarch: python

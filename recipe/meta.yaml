@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
     - qiskit >=0.44
     - qiskit-algorithms >=0.2.0
@@ -28,11 +28,8 @@ requirements:
     - numpy >=1.17
     - pandas
     - psutil >=5
-    - python >=3.7
+    - python >=3.8
     - qiskit-optimization >=0.6.0
-    - qiskit-terra >=0.20.0
-    - quandl
-    - scikit-learn >=0.20.0
     - scipy >=1.4
     - setuptools >=40.1.0
     - yfinance >=0.1.70

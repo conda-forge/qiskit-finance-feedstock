@@ -1,5 +1,5 @@
 {% set name = "qiskit-finance" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/qiskit-finance-{{ version }}.tar.gz
-  sha256: bb7294b56c3a757da8f286725b0679a22549dac600478e239daa563ad820ac1a
+  sha256: dd9559775918f79f4c5f31577a73cf5f135d1911e6601ebcc1ade3901949908d
 
 build:
   noarch: python
@@ -19,7 +19,7 @@ requirements:
     - pip
     - python >=3.8
   run:
-    - qiskit >=0.44
+    - qiskit >=0.45
     - qiskit-algorithms >=0.2.0
     - certifi
     - nasdaq-data-link

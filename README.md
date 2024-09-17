@@ -3,7 +3,7 @@ About qiskit-finance-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/qiskit-finance-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/Qiskit/qiskit-finance
+Home: https://github.com/qiskit-community/qiskit-finance
 
 Package license: Apache-2.0
 

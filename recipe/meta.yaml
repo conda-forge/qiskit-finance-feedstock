@@ -6,18 +6,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/qiskit-finance-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/qiskit-finance-{{ version }}.tar.gz
   sha256: dd9559775918f79f4c5f31577a73cf5f135d1911e6601ebcc1ade3901949908d
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
     - qiskit >=0.45
     - qiskit-algorithms >=0.2.0
@@ -28,7 +28,7 @@ requirements:
     - numpy >=1.17
     - pandas
     - psutil >=5
-    - python >=3.8
+    - python >={{ python_min }}
     - qiskit-optimization >=0.6.0
     - scipy >=1.4
     - setuptools >=40.1.0
@@ -41,6 +41,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/qiskit-community/qiskit-finance
